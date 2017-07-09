@@ -83,11 +83,7 @@ namespace Project2
 
             Console.WriteLine("Your chosen guesses are " + userGuessOne + ", " + userGuessTwo + ", " + userGuessThree + ", " + userGuessFour + ", " + userGuessFive + ", and " + userGuessSix);
 
-
-
-
-            ////while loop
-
+            //Attempts at generating user input without loops (first instinct)
             //Console.WriteLine("Now, please make the first of 6 guesses for the lucky numbers.");
             //int userGuessOne = int.Parse(Console.ReadLine());
             //Console.WriteLine("Now, please make the second of 6 guesses for the lucky numbers.");
@@ -100,14 +96,6 @@ namespace Project2
             //int userGuessFive = int.Parse(Console.ReadLine());
             //Console.WriteLine("And your sixth, and final guess for the lucky numbers, please.");
             //int userGuessSix = int.Parse(Console.ReadLine());
-
-
-
-
-
-
-
-
 
 
 
@@ -124,7 +112,7 @@ namespace Project2
             ////Lucky Number: 35
 
 
-            ////while loop
+
             Random luckyNumbers = new Random();
             int luckyOne = luckyNumbers.Next(startNumber, endNumber);
             Console.WriteLine("Lucky Number: " + luckyOne);
@@ -142,6 +130,63 @@ namespace Project2
             int[] luckyNumbersArray = { luckyOne, luckyTwo, luckyThree, luckyFour, luckyFive, luckySix };
 
 
+            //Attempt at using a while loop:
+            //Random luckyNumbers = new Random();
+            ////int luckyOne = -1;
+            //while (luckyOne <= startNumber || luckyOne >= endNumber)
+            //{
+            //    int luckyOne = luckyNumbers.Next(startNumber, endNumber);
+            //    Console.WriteLine("Lucky Number: " + luckyOne);
+            //    //userGuessOne = Convert.ToInt32(userResponseOne);
+            //}
+
+            //int luckyTwo = -1;
+            //while (luckyTwo <= startNumber || luckyTwo >= endNumber)
+            //{
+            //    Console.WriteLine("Please enter a second number between your starting number and ending number: ");
+            //    String userResponseTwo = Console.ReadLine();
+            //    luckyTwo = Convert.ToInt32(userResponseTwo);
+            //}
+
+            //int luckyThree = -1;
+            //while (luckyThree <= startNumber || luckyThree >= endNumber)
+            //{
+            //    Console.WriteLine("Please enter a third number between your starting number and ending number: ");
+            //    String userResponseThree = Console.ReadLine();
+            //    luckyThree = Convert.ToInt32(userResponseThree);
+            //}
+
+            //int luckyFour = -1;
+            //while (luckyFour <= startNumber || luckyFour >= endNumber)
+            //{
+            //    Console.WriteLine("Please enter a fourth number between your starting number and ending number: ");
+            //    String userResponseFour = Console.ReadLine();
+            //    luckyFour = Convert.ToInt32(userResponseFour);
+            //}
+
+            //int luckyFive = -1;
+            //while (luckyFive <= startNumber || luckyFive >= endNumber)
+            //{
+            //    Console.WriteLine("Please enter a fifth number between your starting number and ending number: ");
+            //    String userResponseFive = Console.ReadLine();
+            //    luckyFive = Convert.ToInt32(userResponseFive);
+            //}
+
+            //int luckySix = -1;
+            //while (luckySix <= startNumber || luckySix >= endNumber)
+            //{
+            //    Console.WriteLine("Please enter a sixth number between your starting number and ending number: ");
+            //    String userResponseSix = Console.ReadLine();
+            //    luckySix = Convert.ToInt32(userResponseSix);
+            //}
+
+            //int[] luckyNumbers = { luckyOne, luckyTwo, luckyThree, luckyFour, luckyFive, luckySix };
+
+            //Console.WriteLine("The lucky numbers are: " + luckyOne + ", " + luckyTwo + ", " + luckyThree + ", " + luckyFour + ", " + luckyFive + ", and " + luckySix);
+
+
+
+
 
             ////Part 3
             ////Hard - code a value for the jackpot amount and let the user know what the jackpot amount is 
@@ -151,7 +196,7 @@ namespace Project2
             ////The program should calculate the user's winnings based on the number of numbers guessed correctly.
             ////The user's winnings should be output to the console. Example: You won $256, 877.23!
 
-            //double jackpot = 1000000;
+            double jackpot = 1000000;
             //Console.WriteLine("The jackpot is $" + jackpot + "!!!");
 
 
@@ -163,12 +208,18 @@ namespace Project2
 
             ////Part 4
             ////Ask the user if the user would like to play again.
-            //Console.WriteLine("Would you like to play again? Yes, or no?");
             ////If the user says yes, then the program should run again from the beginning.
-
-
             ////If the user says no, then the program should say "Thanks for playing!"(Must be exact statement).
 
+            Console.WriteLine("Would you like to play again? Yes, or no?");
+            //if (Console.ReadLine("No")) ;
+            //{
+            //    Console.WriteLine("Thanks for playing!");
+            //}
+            //else
+            //{
+
+            //}
 
 
 
