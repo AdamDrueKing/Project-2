@@ -29,55 +29,59 @@ namespace Project2
             int endNumber = int.Parse(Console.ReadLine());
 
 
-            int playersNumber = -1;
-            while(playersNumber <= startNumber || playersNumber >= endNumber)
+            int userGuessOne = -1;
+            while(userGuessOne <= startNumber || userGuessOne >= endNumber)
             {
                 //This code will get repeated until the player types in a number between 0 and 10.
 
-                Console.WriteLine("Enter a number between your starting number and ending number: ");
-                String playerResponse = Console.ReadLine();
-                playersNumber = Convert.ToInt32(playerResponse);
+                Console.WriteLine("Please enter a number between your starting number and ending number: ");
+                String userResponseOne = Console.ReadLine();
+                userGuessOne = Convert.ToInt32(userResponseOne);
             }
 
-            int playersNumberTwo = -1;
-            while (playersNumberTwo <= startNumber || playersNumberTwo >= endNumber)
+            int userGuessTwo = -1;
+            while (userGuessTwo <= startNumber || userGuessTwo >= endNumber)
             {
-                Console.WriteLine("Enter a second number between your starting number and ending number: ");
-                String playerResponseTwo = Console.ReadLine();
-                playersNumberTwo = Convert.ToInt32(playerResponseTwo);
+                Console.WriteLine("Please enter a second number between your starting number and ending number: ");
+                String userResponseTwo = Console.ReadLine();
+                userGuessTwo = Convert.ToInt32(userResponseTwo);
             }
 
-            int playersNumberThree = -1;
-            while (playersNumberThree <= startNumber || playersNumberThree >= endNumber)
+            int userGuessThree = -1;
+            while (userGuessThree <= startNumber || userGuessThree >= endNumber)
             {
-                Console.WriteLine("Enter a third number between your starting number and ending number: ");
-                String playerResponseThree = Console.ReadLine();
-                playersNumberThree = Convert.ToInt32(playerResponseThree);
+                Console.WriteLine("Please enter a third number between your starting number and ending number: ");
+                String userResponseThree = Console.ReadLine();
+                userGuessThree = Convert.ToInt32(userResponseThree);
             }
 
-            int playersNumberFour = -1;
-            while (playersNumberFour <= startNumber || playersNumberFour >= endNumber)
+            int userGuessFour = -1;
+            while (userGuessFour <= startNumber || userGuessFour >= endNumber)
             {
-                Console.WriteLine("Enter a fourth number between your starting number and ending number: ");
-                String playerResponseFour = Console.ReadLine();
-                playersNumberFour = Convert.ToInt32(playerResponseFour);
+                Console.WriteLine("Please enter a fourth number between your starting number and ending number: ");
+                String userResponseFour = Console.ReadLine();
+                userGuessFour = Convert.ToInt32(userResponseFour);
             }
 
-            int playersNumberFive = -1;
-            while (playersNumberFive <= startNumber || playersNumberFive >= endNumber)
+            int userGuessFive = -1;
+            while (userGuessFive <= startNumber || userGuessFive >= endNumber)
             {
-                Console.WriteLine("Enter a fifth number between your starting number and ending number: ");
-                String playerResponseFive = Console.ReadLine();
-                playersNumberFive = Convert.ToInt32(playerResponseFive);
+                Console.WriteLine("Please enter a fifth number between your starting number and ending number: ");
+                String userResponseFive = Console.ReadLine();
+                userGuessFive = Convert.ToInt32(userResponseFive);
             }
 
-            int playersNumberSix = -1;
-            while (playersNumberSix <= startNumber || playersNumberSix >= endNumber)
+            int userGuessSix = -1;
+            while (userGuessSix <= startNumber || userGuessSix >= endNumber)
             {
-                Console.WriteLine("Enter a sixth number between your starting number and ending number: ");
-                String playerResponseSix = Console.ReadLine();
-                playersNumberSix = Convert.ToInt32(playerResponseSix);
+                Console.WriteLine("Please enter a sixth number between your starting number and ending number: ");
+                String userResponseSix = Console.ReadLine();
+                userGuessSix = Convert.ToInt32(userResponseSix);
             }
+
+                        int[] userGuesses = { userGuessOne, userGuessTwo, userGuessThree, userGuessFour, userGuessFive, userGuessSix };
+
+            Console.WriteLine("Your chosen guesses are " + userGuessOne + ", " + userGuessTwo + ", " + userGuessThree + ", " + userGuessFour + ", " + userGuessFive + ", and " + userGuessSix);
 
 
 
@@ -99,9 +103,7 @@ namespace Project2
 
 
 
-            //int[] userGuesses = { userGuessOne, userGuessTwo, userGuessThree, userGuessFour, userGuessFive, userGuessSix };
 
-            //Console.WriteLine("Your chosen guesses are " + userGuessOne + ", " + userGuessTwo + ", " + userGuessThree + ", " + userGuessFour + ", " + userGuessFive + ", and " + userGuessSix);
 
 
 
