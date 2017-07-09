@@ -125,21 +125,21 @@ namespace Project2
 
 
             ////while loop
-            //Random luckyNumbers = new Random();
-            //int luckyOne = luckyNumbers.Next(startNumber, endNumber);
-            //Console.WriteLine("Lucky Number: " + luckyOne);
-            //int luckyTwo = luckyNumbers.Next(startNumber, endNumber);
-            //Console.WriteLine("Lucky Number: " + luckyTwo);
-            //int luckyThree = luckyNumbers.Next(startNumber, endNumber);
-            //Console.WriteLine("Lucky Number: " + luckyThree);
-            //int luckyFour = luckyNumbers.Next(startNumber, endNumber);
-            //Console.WriteLine("Lucky Number: " + luckyFour);
-            //int luckyFive = luckyNumbers.Next(startNumber, endNumber);
-            //Console.WriteLine("Lucky Number: " + luckyFive);
-            //int luckySix = luckyNumbers.Next(startNumber, endNumber);
-            //Console.WriteLine("Lucky Number: " + luckySix);
+            Random luckyNumbers = new Random();
+            int luckyOne = luckyNumbers.Next(startNumber, endNumber);
+            Console.WriteLine("Lucky Number: " + luckyOne);
+            int luckyTwo = luckyNumbers.Next(startNumber, endNumber);
+            Console.WriteLine("Lucky Number: " + luckyTwo);
+            int luckyThree = luckyNumbers.Next(startNumber, endNumber);
+            Console.WriteLine("Lucky Number: " + luckyThree);
+            int luckyFour = luckyNumbers.Next(startNumber, endNumber);
+            Console.WriteLine("Lucky Number: " + luckyFour);
+            int luckyFive = luckyNumbers.Next(startNumber, endNumber);
+            Console.WriteLine("Lucky Number: " + luckyFive);
+            int luckySix = luckyNumbers.Next(startNumber, endNumber);
+            Console.WriteLine("Lucky Number: " + luckySix);
 
-            //int[] luckyNumbersArray = { luckyOne, luckyTwo, luckyThree, luckyFour, luckyFive, luckySix };
+            int[] luckyNumbersArray = { luckyOne, luckyTwo, luckyThree, luckyFour, luckyFive, luckySix };
 
 
 
