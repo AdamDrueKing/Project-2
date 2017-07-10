@@ -21,7 +21,6 @@ namespace Project2
             //...Do this until the user enters a valid number.
 
             Console.WriteLine("Welcome to the Lucky Lottery Game!!!");
-            Console.WriteLine("You can win UP TO $1,000,000 in this game!!!");
 
             Console.WriteLine("In order to begin, please select a starting number. This will be the lowest number in the range.");
             int startNumber = int.Parse(Console.ReadLine());
@@ -195,15 +194,50 @@ namespace Project2
             ////...Example: You guessed 3 numbers correctly!
             ////The program should calculate the user's winnings based on the number of numbers guessed correctly.
             ////The user's winnings should be output to the console. Example: You won $256, 877.23!
-
+             
             double jackpot = 1000000;
-            //Console.WriteLine("The jackpot is $" + jackpot + "!!!");
+            Console.WriteLine("The jackpot is now $" + jackpot + "!!! You can win up to $" + jackpot + ", depending on how many lucky numbers you correctly guessed!!!");
 
+            //int[] luckyNumbersArray = { luckyOne, luckyTwo, luckyThree, luckyFour, luckyFive, luckySix };
+            //int[] userGuesses = { userGuessOne, userGuessTwo, userGuessThree, userGuessFour, userGuessFive, userGuessSix };
+ 
+            //foreach ()
 
+            //Attempt at using StackOverFlow for help with getting the code to check matching elements in the arrays. No luck, obviously.
+            //Array.prototype.diff = function(luckyNumbers)
+            //    {
+            //    var ret = [];
+            //    luckyNumbers.sort();
+            //    userGuesses.sort();
+            //    for(var i = 0; i < luckyNumbers.Length; i += 1)
+            //    {
+            //        if(luckyNumbers.indexOf( luckyNumbers[i])) > -1
+            //                {
+            //            ret.push(this[i]);
+            //        }
+            //    }
+            //    return ret;
+            //};
 
-
-
-
+            //int userGuesses[i];
+            //int luckyNumbersArray[j];
+            //for (int i = 0, j = 0; i < userGuesses && j < luckyNumbersArray;)
+            //{
+            //    if (userGuesses[i] == luckyNumbersArray[j])
+            //    {
+            //        cout << "DUPLICATE AT POSITION " << i << "," << j << endl;
+            //        i++;
+            //        j++;
+            //    }
+            //    else if (userGuesses[i] < luckyNumbersArray[j])
+            //    {
+            //        i++;
+            //    }
+            //    else
+            //    {
+            //        j++;
+            //    }
+            //}
 
 
             ////Part 4
@@ -214,7 +248,7 @@ namespace Project2
             Console.WriteLine("Would you like to play again? Yes, or no?");
             //if (Console.ReadLine("No")) ;
             //{
-            //    Console.WriteLine("Thanks for playing!");
+            //     Console.WriteLine("Thanks for playing!");
             //}
             //else
             //{
