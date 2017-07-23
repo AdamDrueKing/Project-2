@@ -78,7 +78,24 @@ namespace Project2
                 userGuessSix = Convert.ToInt32(userResponseSix);
             }
 
-                        int[] userGuesses = { userGuessOne, userGuessTwo, userGuessThree, userGuessFour, userGuessFive, userGuessSix };
+                        //int[] userGuesses = { userGuessOne, userGuessTwo, userGuessThree, userGuessFour, userGuessFive, userGuessSix };
+            {
+                int[] userGuesses = new int[6]; // Initialize.
+                userGuesses[0] = userGuessOne;             // First element.
+                userGuesses[1] = userGuessTwo;             // Second.
+                userGuesses[2] = userGuessThree;           // Third.
+                userGuesses[3] = userGuessFour;            // Fourth.
+                userGuesses[4] = userGuessFive;            // Fifth.
+                userGuesses[5] = userGuessSix;             // Sixth
+
+                // Loop over strings.
+                for (int i = 0; i < userGuesses.Length; i++)
+                {
+                    int s = userGuesses[i];
+                    Console.WriteLine(s);
+                }
+            }
+
 
             Console.WriteLine("Your chosen guesses are " + userGuessOne + ", " + userGuessTwo + ", " + userGuessThree + ", " + userGuessFour + ", " + userGuessFive + ", and " + userGuessSix);
 
@@ -126,7 +143,24 @@ namespace Project2
             int luckySix = luckyNumbers.Next(startNumber, endNumber);
             Console.WriteLine("Lucky Number: " + luckySix);
 
-            int[] luckyNumbersArray = { luckyOne, luckyTwo, luckyThree, luckyFour, luckyFive, luckySix };
+           /* int[] *//*luckyNumbersArray = { luckyOne, luckyTwo, luckyThree, luckyFour, luckyFive, luckySix };*/
+
+            {
+                int[] luckyNumbersArray = new int[6]; // Initialize.
+                luckyNumbersArray[0] = luckyOne;             // First element.
+                luckyNumbersArray[1] = luckyTwo;             // Second.
+                luckyNumbersArray[2] = luckyThree;           // Third.
+                luckyNumbersArray[3] = luckyFour;            // Fourth.
+                luckyNumbersArray[4] = luckyFive;            // Fifth.
+                luckyNumbersArray[5] = luckySix;             // Sixth
+ 
+                // Loop over strings.
+                for (int i = 0; i < luckyNumbersArray.Length; i++)
+                {
+                    int s = luckyNumbersArray[i];
+                    Console.WriteLine(s);
+                }
+            }
 
 
             //Attempt at using a while loop:
@@ -194,13 +228,19 @@ namespace Project2
             ////...Example: You guessed 3 numbers correctly!
             ////The program should calculate the user's winnings based on the number of numbers guessed correctly.
             ////The user's winnings should be output to the console. Example: You won $256, 877.23!
-             
+
             double jackpot = 1000000;
             Console.WriteLine("The jackpot is now $" + jackpot + "!!! You can win up to $" + jackpot + ", depending on how many lucky numbers you correctly guessed!!!");
 
+            var luckyNumbersArray = new[] { 0, 0, 1, 2, 3 };
+            var userGuesses = new[] { 0, 0, 0,  2 };
+
+            luckyNumbersArray.Intersect(userGuesses);
+
+
             //int[] luckyNumbersArray = { luckyOne, luckyTwo, luckyThree, luckyFour, luckyFive, luckySix };
             //int[] userGuesses = { userGuessOne, userGuessTwo, userGuessThree, userGuessFour, userGuessFive, userGuessSix };
- 
+
             //foreach ()
 
             //Attempt at using StackOverFlow for help with getting the code to check matching elements in the arrays. No luck, obviously.
